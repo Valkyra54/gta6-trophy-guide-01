@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5): all 55 trophies, offline tracker</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide &amp; tracker</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">All 55 trophies — official names, descriptions and grades — with a guide in our own words and a cited source beside every one. Tick them off as you earn them; your progress stays in this browser.</p>
+  </div>
+  <div class="platinum-box" id="platinumBox">
+    <div class="platinum-grade">PLATINUM</div>
+    <div class="platinum-name">Vice Got a Price!</div>
+    <div class="platinum-desc">Congratulations! You&rsquo;re a Leonida Legend.</div>
+  </div>
+</header>
+
+<section class="progress" id="progressPanel" aria-label="Progress">
+  <div class="progress-line">
+    <strong id="progressText">0 of 55 earned</strong>
+    <span id="progressPct">0%</span>
+  </div>
+  <div class="bar"><div class="bar-fill" id="progressBar" style="width:0%"></div></div>
+  <div class="counts" id="gradeCounts"></div>
+  <p class="fine">Progress saves in this browser (localStorage) and never leaves it. Export it to a file below to back it up or move it to another browser.</p>
+</section>
+
+<aside class="alert" id="missableAlert">
+  <strong>&#9888; 1 possibly missable trophy.</strong>
+  <span><strong>Positive Mental Attitude</strong> — meditate at Jason&rsquo;s house in Chapter 1, before Chapter 1 ends. Do the morning meditation with Lucia on the balcony (after the mission &ldquo;Down to Earth&rdquo;). Every other trophy can be earned in free-roam after the story.</span>
+</aside>
+
+<nav class="tabs" aria-label="Views">
+  <button id="tabChecklist" type="button" class="tab active" aria-selected="true">Checklist</button>
+  <button id="tabRoadmap" type="button" class="tab" aria-selected="false">Roadmap to the platinum</button>
+</nav>
+
+<main>
+<section id="viewChecklist">
+  <div class="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="trophy, mission, place&hellip;" autocomplete="off"></label>
+    <div class="kinds" id="kindFilters" role="group" aria-label="Filter by kind">
+      <button type="button" data-kind="all" class="kind active">All 55</button>
+      <button type="button" data-kind="story" class="kind">Story</button>
+      <button type="button" data-kind="missable" class="kind">Missable</button>
+      <button type="button" data-kind="collectibles" class="kind">Collectibles</button>
+      <button type="button" data-kind="activities" class="kind">Activities</button>
+      <button type="button" data-kind="online" class="kind">Online</button>
+    </div>
+    <label>Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="check"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+    <label class="check"><input id="showEarnedOnly" type="checkbox"> Earned only</label>
+  </div>
+  <div class="controls tools">
+    <button id="export" type="button">Export progress (.json)</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset progress</button>
+    <span id="importNote" class="fine"></span>
+  </div>
+  <p class="fine" id="listNote"></p>
+  <ul class="trophies" id="list"></ul>
+  <p class="fine" id="emptyNote" hidden>No trophies match these filters.</p>
+</section>
+
+<section id="viewRoadmap" hidden>
+  <h2>Roadmap to the platinum — Vice Got a Price!</h2>
+  <p class="lede">One playthrough is enough. No difficulty setting, no mission replay, no DLC, no multiplayer. Difficulty about 4/10; roughly 200 to 300+ hours (PowerPyx ~200 h; Push Square 300+ h). <strong>Never use cheats</strong> — cheats disable trophies <em>and</em> your save. Keep 15 manual save slots plus 1 autosave: save at the start and end of every chapter (10 saves) and rotate the other 5 in free-roam.</p>
+
+  <div class="stages">
+    <article class="stage">
+      <h3>Stage 1 — Story &amp; first pass <span class="stage-time">60–80 h</span></h3>
+      <p>Play the story (5 chapters). Along the way:</p>
+      <ul>
+        <li><strong>Do not skip the Chapter 1 meditation</strong> at Jason&rsquo;s house — the one possibly missable trophy (see Positive Mental Attitude).</li>
+        <li>Scan every new vehicle with WAiNK (target 200 of 277 base models for 100%).</li>
+        <li>Study new animals through the scope (target 100 of 255).</li>
+        <li>Start optional quests as they appear (target 100 for 100% — there are 200–300+, so take it easy).</li>
+        <li>Character questlines: Andy (Lucia, Ch. 3), Kenton (Ch. 1), Billy (after Ch. 2 &ldquo;Coffee Break&rdquo;), Randy (Ch. 3), Tyrone (Jason, Ch. 3), Bret (Jason, after Ch. 2 &ldquo;Coffee Break&rdquo;) — all stay open after the story.</li>
+        <li>Save manually at the start and end of each chapter. There is no mission replay.</li>
+      </ul>
+      <p class="stage-trophies">Trophies: all 12 story chapter/mission trophies, the final-mission gold, and most early activities.</p>
+    </article>
+    <article class="stage">
+      <h3>Stage 2 — The 100% checklist <span class="stage-time">~100 h</span></h3>
+      <p>After the story, the checklist opens (Progress &gt; Stats &gt; 100% Completion). Work it in this order:</p>
+      <ul>
+        <li><strong>Robberies, all of them:</strong> 39 gang operations, 22 bank jobs, 7 payday loans, 8 vaults, 34 of 35 smash &rsquo;n&rsquo; grabs, 50 of 91 stick-ups, plus fencing $100k narcotics / $100k jewellery / $250k marked bills / $200k vehicles.</li>
+        <li><strong>Must be complete:</strong> 33 underwater discoveries, 42 shooting-range golds, 42 drone time trials, 15 Target Deck entries for Bret.</li>
+        <li><strong>Partial targets:</strong> 15 card sets, 100 WAiNK scans, 30 magazines/books/comics, 15 meditations, 100 flamingos, 2 playlists, 70 styles, 30 unique race wins, 10 gold race challenges, 4 arcade games, 5 pool opponents, 2 mini-golf courses, 90 basketball hoops, 300 stunts, 70 of 80 challenges, 200 vehicles, 50 standard weapons, 100 animals.</li>
+      </ul>
+      <p class="stage-trophies">Trophies: A Long Road (gold, 100%), Cunning Stunts, The Shootist, Top Fun, Earn Cash Not Kudos, Don&rsquo;t Touch My Deck, You WAiNKer!, Maximum Withdrawal, and most of the rest.</p>
+    </article>
+    <article class="stage">
+      <h3>Stage 3 — Strangers &amp; clean-up <span class="stage-time">10–20 h</span></h3>
+      <p>Finish the 8 Strangers &amp; Freaks strands (they do not count toward 100%), the remaining meditations, and any misc trophies still open — Hot Together, Retail Therapy, Gunslinger and the rest mostly pop naturally during Stage 2. Check the tracker trophy by trophy; the platinum pops with the last one.</p>
+      <p class="stage-trophies">Trophies: Strangers &amp; Freaks, the two reported-but-unconfirmed misc trophies (The Truth Is Out There, Ten Pin), then Vice Got a Price!</p>
+    </article>
+  </div>
+
+  <h3>Collectibles at a glance</h3>
+  <table class="data">
+    <thead><tr><th>Collection</th><th>In the game</th><th>For a trophy</th><th>For 100%</th></tr></thead>
+    <tbody>
+      <tr><td>Collectible card sets</td><td>18 sets / 480 cards</td><td>3 sets</td><td>15 sets (min. 372 cards)</td></tr>
+      <tr><td>WAiNK locations</td><td>112 (31 Landmark, 35 Curiosities, 23 Sculptures, 23 No Flusher Tag)</td><td>100 scans</td><td>100 scans</td></tr>
+      <tr><td>Stunts</td><td>397 (130 jumps, 202 bridge flights, 40 knife flights, 25 base jumps)</td><td>250</td><td>300</td></tr>
+      <tr><td>Shooting range</td><td>12 locations, 42 challenges</td><td>42 gold</td><td>42 gold</td></tr>
+      <tr><td>Top Fun drone races</td><td>14 locations, 42 races</td><td>win at 14 locations</td><td>42 time trials</td></tr>
+      <tr><td>Unique races</td><td>40 locations</td><td>win 20</td><td>win 30</td></tr>
+      <tr><td>Challenges</td><td>80 (8 groups &times; 10)</td><td>50</td><td>70</td></tr>
+      <tr><td>Meditations</td><td>18 spots, 10 locations</td><td>18 (1 possibly missable)</td><td>15</td></tr>
+      <tr><td>Bank vaults</td><td>8 Large Bank Jobs</td><td>5</td><td>8</td></tr>
+      <tr><td>Gang operations</td><td>39 (9 gangs)</td><td>1 per gang</td><td>39</td></tr>
+      <tr><td>Vehicles</td><td>557 (277 base models + 280 standouts)</td><td>discover 100</td><td>scan 200 base models</td></tr>
+      <tr><td>Garages</td><td>12 locations (8 buyable + 4 story)</td><td>buy 8 ($160,000)</td><td>—</td></tr>
+      <tr><td>Leonida areas</td><td>52</td><td>all (clear the fog)</td><td>—</td></tr>
+      <tr><td>Underwater discoveries</td><td>33</td><td>—</td><td>33</td></tr>
+      <tr><td>Target Deck (Bret)</td><td>15</td><td>questline</td><td>15</td></tr>
+    </tbody>
+  </table>
+
+  <h3>What the numbers still argue about</h3>
+  <ul class="caveats">
+    <li><strong>Gold race challenges for 100%:</strong> PowerPyx says 10 of 13; Push Square says 30. Follow the in-game checklist number.</li>
+    <li><strong>The final mission&rsquo;s name:</strong> guides do not agree, so this guide names none — &ldquo;the final mission (Chapter 5)&rdquo; only.</li>
+    <li><strong>Strangers &amp; Freaks:</strong> only 4 strands are confirmed to count (Kirk, Kyle, Yago, Pilot Pete); more strangers may still be undiscovered.</li>
+    <li><strong>The Truth Is Out There and Ten Pin:</strong> methods reported by PowerPyx, but Keengamer notes both are still unconfirmed.</li>
+    <li><strong>Card map:</strong> only 58 of 480 card locations are publicly known; the 480 total is reported, not fully confirmed.</li>
+    <li><strong>Sneakthief&rsquo;s hidden status:</strong> most guides list it hidden; Games.gg lists it visible. This guide follows the majority.</li>
+  </ul>
+</section>
+</main>
+
+<footer>
+  <h2>Sources</h2>
+  <p>Every trophy&rsquo;s guide names its sources beside it. The main sources for this guide:</p>
+  <ul class="sources">
+    <li><a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a></li>
+    <li><a href="https://www.powerpyx.com/gta-6-100-completion-checklist-guide/">PowerPyx — 100% Completion Checklist &amp; Guide</a></li>
+    <li><a href="https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap">Push Square — GTA 6 Trophy Guide &amp; Roadmap</a></li>
+    <li><a href="https://www.pushsquare.com/guides/gta-6-100percent-completion-checklist">Push Square — 100% Completion Checklist</a></li>
+    <li><a href="https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/">EGamers.io — Trophy List: All 55 Trophies</a></li>
+    <li><a href="https://gtaspotter.com/en/guides/gta-6-trophies-and-achievements/">GTASpotter — Full official list</a></li>
+    <li><a href="https://www.gtabase.com/articles/gta-6/gta-6-achievements-trophies-list-ps5-xbox-series">GTABase — Trophy/Achievement List</a></li>
+    <li><a href="https://www.shacknews.com/article/151397/gta6-100-percent-checklist">Shacknews — 100% Completion checklist</a></li>
+    <li><a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">Keengamer — Trophy Guide &amp; Platinum Roadmap</a></li>
+    <li><a href="https://gtadb.net/articles/gta-6-collectible-cards-locations-guide/">GTADB — Collectible Cards: All 18 Sets and Known Locations</a></li>
+    <li><a href="https://gta6.wiki.fextralife.com/All_Collectible_Cards_Set_Locations">Fextralife — All Collectible Cards Set Locations</a></li>
+    <li><a href="https://gmtreks.com/gta6/page/01M7R0PJ8N9EG5Y2EBNA7GXN86">GameTrek — All WAiNK Scan Locations</a></li>
+    <li><a href="https://games.gg/grand-theft-auto-vi/guides/complete-grand-theft-auto-6-trophy-list/">Games.gg — Complete Trophy List</a></li>
+  </ul>
+  <p class="fine">Trophy names and descriptions are as PlayStation publishes them. All guide text is original, written for this entry and paraphrased from the cited sources — never copied. This guide uses no Rockstar Games logo, official artwork, box art or game screenshots; the look is its own. Game released 19 November 2026; some details are still being confirmed by the community and are marked where they are not yet certain. Guide updated 20 November 2026. Works fully offline: it loads nothing from the network.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
